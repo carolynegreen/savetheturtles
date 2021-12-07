@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 181">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #dcdcdc;
+      }
+
+      .cls-2 {
+        fill: #b8b8b8;
+      }
+    </style>
+  </defs>
+  <g id="Trashcan">
+    <g>
+      <path class="cls-1" d="M8.6,23.44V169.12s45.14,26.68,110.8,0V23.44Z"/>
+      <rect class="cls-1" x="0.19" y="14.97" width="127.62" height="19.94"/>
+      <path class="cls-1" d="M81.42,18.62c-17.42-41.31-34.84,0-34.84,0h8s10.08-26,20.39,0Z"/>
+      <ellipse class="cls-2" cx="28.3" cy="102.21" rx="3.74" ry="58.58"/>
+      <ellipse class="cls-2" cx="64.31" cy="102.21" rx="3.74" ry="58.58"/>
+      <ellipse class="cls-2" cx="100.32" cy="102.21" rx="3.74" ry="58.58"/>
+    </g>
+  </g>
+</svg>

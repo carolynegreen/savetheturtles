@@ -1,0 +1,893 @@
+body {
+    display: grid;
+    grid-template-areas:
+        "hd"
+        "ma"
+        "fo";
+    font-family: 'Roboto Slab', serif;
+    margin: 0;
+    padding: 0;
+    background-color: navajowhite;
+}
+
+header {
+    grid-area: hd;
+    background-color: navajowhite;
+}
+
+main {
+    grid-area: ma;
+    display: grid;
+    grid-template-areas:
+        "game info";
+    grid-template-columns: 75% 1fr;
+}
+
+footer {
+    grid-area: fo;
+    background-color: navajowhite;
+}
+
+aside {
+    grid-area: info;
+    background-color: navajowhite;
+    padding: 10%;
+}
+
+header ul {
+    display: flex;
+    flex-direction: row;
+}
+
+header li {
+    list-style: none;
+    padding-right: 10px
+}
+
+#screen {
+    position: relative;
+    grid-area: game;
+    width: 75vw;
+    height: 42vw;
+    overflow: hidden;
+}
+
+#game {
+    width: 100%;
+    height: 100%;
+}
+
+h1 {
+    color: white;
+    font-size: 5vw;
+    font-family: 'Baloo 2', cursive;
+    margin-bottom: 1vw;
+    margin-top: 2vw;
+}
+
+#game_background {
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/Title.svg);
+    background-size: 100%;
+}
+
+#lil_palmtree {
+    position: absolute;
+    top: -1vw;
+    left: 54.5vw;
+    background-image: url(../img/lil%20palm.svg);
+    background-repeat: no-repeat;
+    width: 21vw;
+    height: 19vw;
+    z-index: 1;
+}
+
+#cloud {
+    position: absolute;
+    top: 4vw;
+    left: 0vw;
+    background-image: url(../img/Cloud.svg);
+    background-repeat: no-repeat;
+    width: 20vw;
+    height: 8vw;
+}
+
+#titlebackground {
+    background-image: url(../img/Title.svg);
+    position: absolute;
+    width: 75vw;
+    height: 45vw;
+    top: 0;
+    left: 0;
+}
+
+#titlepalmtree {
+    position: absolute;
+    top: -1vw;
+    left: 54.5vw;
+    background-image: url(../img/lil%20palm.svg);
+    background-repeat: no-repeat;
+    width: 21vw;
+    height: 19vw;
+    z-index: 1;
+}
+
+#titlecloud {
+    position: absolute;
+    top: 4vw;
+    left: 0vw;
+    background-image: url(../img/Cloud.svg);
+    background-repeat: no-repeat;
+    width: 20vw;
+    height: 8vw;
+}
+
+#titlelogo {
+    background-image: url(../img/Title_1.svg);
+    position: absolute;
+    top: 5vw;
+    left: 23vw;
+    background-repeat: no-repeat;
+    width: 30vw;
+    height: 18vw;
+    z-index: 2;
+}
+
+#bigpalm {
+    background-image: url(../img/palm%20tree.svg);
+    position: absolute;
+    background-repeat: no-repeat;
+    top: -2vw;
+    left: -4vw;
+    width: 30vw;
+    height: 45vw;
+    z-index: 1;
+}
+
+#start_button {
+    position: absolute;
+    background-image: url(../img/Start.svg);
+    background-repeat: no-repeat;
+    top: 27vw;
+    left: 28vw;
+    width: 19vw;
+    height: 7vw;
+}
+
+#story {
+    background-image: url(../img/Story.svg);
+    position: absolute;
+    background-repeat: no-repeat;
+    top: 50%;
+    left: 50%;
+    width: 70vw;
+    height: 38vw;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+#instructions {
+    background-image: url(../img/Rules.svg);
+    position: absolute;
+    background-repeat: no-repeat;
+    top: 50%;
+    left: 50%;
+    width: 70vw;
+    height: 38vw;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+#next {
+    background-image: url(../img/Next.svg);
+    position: absolute;
+    background-repeat: no-repeat;
+    top: 30vw;
+    left: 50vw;
+    width: 15vw;
+    height: 5vw;
+}
+
+#back {
+    background-image: url(../img/Back.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 30vw;
+    left: 30vw;
+    width: 15vw;
+    height: 5vw;
+}
+
+#play {
+    background-image: url(../img/Play.svg);
+    position: absolute;
+    background-repeat: no-repeat;
+    top: 32vw;
+    left: 39vw;
+    width: 15vw;
+    height: 5vw;
+}
+
+#back2 {
+    background-image: url(../img/Back.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 32vw;
+    left: 15vw;
+    width: 15vw;
+    height: 5vw;
+}
+
+#jelly_container {
+    position: absolute;
+}
+
+#jelly {
+    background-image: url(../img/Jellie.svg);
+    background-repeat: no-repeat;
+    width: 4vw;
+    height: 10vw;
+}
+
+#jelly_container2 {
+    position: absolute;
+}
+
+#jelly2 {
+    background-image: url(../img/Jellie.svg);
+    background-repeat: no-repeat;
+    width: 4vw;
+    height: 10vw;
+}
+
+#shrimp_container {
+    position: absolute;
+}
+
+#shrimp {
+    background-image: url(../img/Shrimp.svg);
+    background-repeat: no-repeat;
+    width: 10vw;
+    height: 7vw;
+}
+
+#shrimp_container2 {
+    position: absolute;
+}
+
+#shrimp2 {
+    background-image: url(../img/Shrimp.svg);
+    background-repeat: no-repeat;
+    width: 10vw;
+    height: 7vw;
+}
+
+#seaweed_container {
+    position: absolute;
+}
+
+#seaweed {
+    background-image: url(../img/Seaweed.svg);
+    background-repeat: no-repeat;
+    width: 12vw;
+    height: 9vw;
+}
+
+#seaweed_container2 {
+    position: absolute;
+}
+
+#seaweed2 {
+    background-image: url(../img/Seaweed.svg);
+    background-repeat: no-repeat;
+    width: 12vw;
+    height: 9vw;
+}
+
+#netto_container {
+    position: absolute;
+
+}
+
+#netto {
+    background-image: url(../img/Netto.svg);
+    background-repeat: no-repeat;
+    width: 6vw;
+    height: 7vw;
+}
+
+#trashbag_container {
+    position: absolute;
+}
+
+#trashbag {
+    background-image: url(../img/Trashbag.svg);
+    background-repeat: no-repeat;
+    width: 7vw;
+    height: 9vw;
+}
+
+#facemask_container {
+    position: absolute;
+}
+
+#facemask {
+    background-image: url(../img/Facemask.svg);
+    background-repeat: no-repeat;
+    width: 9vw;
+    height: 8vw;
+}
+
+#pause {
+    background-image: url(../img/Pause.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 1vw;
+    left: 62vw;
+    width: 4vw;
+    height: 4vw;
+    z-index: 1;
+}
+
+#health {
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    top: 1.7vw;
+    left: 47vw;
+    width: 10vw;
+    height: 3vw;
+}
+
+#life1 {
+    position: absolute;
+    width: 3vw;
+    height: 2vw;
+}
+
+#life2 {
+    position: absolute;
+    width: 3vw;
+    height: 2vw;
+}
+
+#life3 {
+    position: absolute;
+    width: 3vw;
+    height: 2vw;
+}
+
+.turtlered {
+    background-image: url(../img/Turtle%20Life.svg);
+    background-size: cover;
+    width: 3vw;
+    height: 2vw;
+}
+
+.turtleblack {
+    background-image: url(../img/Turtle%20Lost%20Life.svg);
+    background-size: cover;
+    width: 3vw;
+    height: 2vw;
+}
+
+#time {
+    background-image: url(../img/Time.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 2vw;
+    left: 22vw;
+    width: 25vw;
+    height: 2vw;
+}
+
+#points {
+    background-image: url(../img/Points.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 1vw;
+    left: 11vw;
+    width: 9vw;
+    height: 5vw;
+    text-align: center;
+    font-size: 3.5vw;
+}
+
+#trash {
+    background-image: url(../img/Trashcan.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 1vw;
+    left: 7vw;
+    width: 9vw;
+    height: 5vw;
+}
+
+.cloudpos {
+    position: absolute;
+    top: 4vw;
+    left: 0vw;
+}
+
+.cloudmove {
+    animation: cloud;
+    animation-duration: 35s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.pos1 {
+    position: absolute;
+    top: 18vw;
+    left: -13vw;
+}
+
+.move1 {
+    animation: waves;
+    animation-duration: 10s;
+    animation-delay: 2s;
+    animation-direction: normal;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.pos1a {
+    position: absolute;
+    top: 31vw;
+    left: -13vw;
+}
+
+.move1a {
+    animation: lowerwaves;
+    animation-duration: 15s;
+    animation-delay: 6s;
+    animation-direction: reverse;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.pos2 {
+    position: absolute;
+    top: 31vw;
+    left: -13vw;
+}
+
+.move2 {
+    animation: lowerwaves;
+    animation-duration: 15s;
+    animation-delay: 4s;
+    animation-direction: reverse;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.pos2a {
+    position: absolute;
+    top: 18vw;
+    left: -13vw;
+}
+
+.move2a {
+    animation: waves;
+    animation-duration: 16s;
+    animation-delay: 12s;
+    animation-direction: normal;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.pos3 {
+    position: absolute;
+    top: 18vw;
+    left: -13vw;
+}
+
+.move3 {
+    animation: waves;
+    animation-duration: 20s;
+    animation-delay: 8s;
+    animation-direction: reverse;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.pos3a {
+    position: absolute;
+    top: 31vw;
+    left: -13vw;
+}
+
+.move3a {
+    animation: lowerwaves;
+    animation-duration: 12s;
+    animation-delay: 12s;
+    animation-direction: normal;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.pos4 {
+    position: absolute;
+    top: 31vw;
+    left: -13vw;
+}
+
+.move4 {
+    animation: lowerwaves;
+    animation-duration: 14s;
+    animation-delay: 8s;
+    animation-direction: normal;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.pos5 {
+    position: absolute;
+    top: 18vw;
+    left: -13vw;
+}
+
+.move5 {
+    animation: waves;
+    animation-duration: 16s;
+    animation-delay: 6s;
+    animation-direction: normal;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.pos6 {
+    position: absolute;
+    top: 31vw;
+    left: -13vw;
+}
+
+.move6 {
+    animation: lowerwaves;
+    animation-duration: 18s;
+    animation-delay: 10s;
+    animation-direction: reverse;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+#levelcomplete {
+    display: grid;
+    grid-template-areas: ". txt";
+    grid-template-columns: 50% 50%;
+    background-image: url(../img/Win.svg);
+    position: absolute;
+    background-repeat: no-repeat;
+    top: 50%;
+    left: 50%;
+    width: 70vw;
+    height: 38vw;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+#level_complete_text {
+    grid-area: txt;
+    text-align: center;
+    padding-right: 2vw;
+    color: white;
+    font-size: 2vw
+}
+
+#gamelose {
+    display: grid;
+    grid-template-areas: ". txt";
+    grid-template-columns: 50% 50%;
+    background-image: url(../img/Lose%20-Sick.svg);
+    position: absolute;
+    background-repeat: no-repeat;
+    top: 50%;
+    left: 50%;
+    width: 70vw;
+    height: 38vw;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+#gameover {
+    display: grid;
+    grid-template-areas: ". txt";
+    grid-template-columns: 50% 50%;
+    background-image: url(../img/Lose%20-Sick.svg);
+    position: absolute;
+    background-repeat: no-repeat;
+    top: 50%;
+    left: 50%;
+    width: 70vw;
+    height: 38vw;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+#game_over_text {
+    grid-area: txt;
+    text-align: center;
+    padding-right: 2vw;
+    color: white;
+    font-size: 2vw
+}
+
+#game_lose_text {
+    grid-area: txt;
+    text-align: center;
+    padding-right: 2vw;
+    color: white;
+    font-size: 2vw
+}
+
+#levelcomplete_replay {
+    background-image: url(../img/Replay.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 31vw;
+    left: 52vw;
+    width: 15vw;
+    height: 5vw;
+}
+
+#gamelose_quit {
+    background-image: url(../img/Quit.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 31vw;
+    left: 33vw;
+    width: 15vw;
+    height: 5vw;
+}
+
+#levelcomplete_quit {
+    background-image: url(../img/Quit.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 31vw;
+    left: 33vw;
+    width: 15vw;
+    height: 5vw;
+}
+
+#gameover_quit {
+    background-image: url(../img/Quit.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 31vw;
+    left: 33vw;
+    width: 15vw;
+    height: 5vw;
+}
+
+
+#gamelose_retry {
+    background-image: url(../img/Retry.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 31vw;
+    left: 52vw;
+    width: 15vw;
+    height: 5vw;
+}
+
+#gameover_retry {
+    background-image: url(../img/Retry.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 31vw;
+    left: 52vw;
+    width: 15vw;
+    height: 5vw;
+}
+
+#pause_retry {
+    background-image: url(../img/Retry.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 31vw;
+    left: 23vw;
+    width: 13vw;
+    height: 5vw;
+}
+
+#pause_quit {
+    background-image: url(../img/Quit.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 31vw;
+    left: 6vw;
+    width: 13vw;
+    height: 5vw;
+}
+
+#pause_screen {
+    background-image: url(../img/Paused.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 42vw;
+    height: 40vw;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+#continue {
+    background-image: url(../img/Continue.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 24vw;
+    left: 50%;
+    width: 20vw;
+    height: 6vw;
+    transform: translate(-50%)
+}
+
+#on {
+    background-image: url(../img/ON.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 16vw;
+    left: 12vw;
+    width: 18vw;
+    height: 5vw;
+}
+
+#off {
+    background-image: url(../img/OFF.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 16vw;
+    left: 12vw;
+    width: 18vw;
+    height: 5vw;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+@keyframes waves {
+    0%: {
+        top: 18vw;
+        left: 0vw;
+    }
+
+    25% {
+        top: 20vw;
+        left: 15vw;
+    }
+
+    50% {
+        top: 18vw;
+        left: 30vw;
+    }
+
+    75% {
+        top: 20vw;
+        left: 50vw;
+    }
+
+    100% {
+        top: 18vw;
+        left: 75vw;
+    }
+}
+
+@keyframes lowerwaves {
+    0%: {
+        top: 30vw;
+        left: 0vw;
+    }
+
+    25% {
+        top: 32vw;
+        left: 15vw;
+    }
+
+    50% {
+        top: 30vw;
+        left: 30vw;
+    }
+
+    75% {
+        top: 32vw;
+        left: 45vw;
+    }
+
+    100% {
+        top: 30vw;
+        left: 75vw;
+    }
+}
+
+@keyframes zoomout {
+    from {
+        transform: scale(1)
+    }
+
+    to {
+        transform: scale(0)
+    }
+}
+
+@keyframes cloud {
+    from {
+        transform: translateX(-22vw)
+    }
+
+    to {
+        transform: translateX(75vw)
+    }
+}
+
+.shrink {
+    animation-name: shrink;
+    animation-duration: 60s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+}
+
+.timer {
+    background-image: url(../img/Time%20Color.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 2.1vw;
+    left: 22vw;
+    width: 25vw;
+    height: 2vw;
+    animation: shrink 60s linear;
+    animation-iteration-count: 1;
+}
+
+.timer_still {
+    background-image: url(../img/Time%20Color.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 2.1vw;
+    left: 22vw;
+    width: 25vw;
+    height: 2vw; 
+}
+
+
+@keyframes shrink {
+    0% {
+        transform: scaleX(1)
+    }
+
+    100% {
+        transform: scaleX(0)
+    }
+}
+
+.zoomout {
+    animation: zoomout 1s;
+}
+
+.stop {
+    animation-play-state: paused;
+}
+
+.restart {
+    animation-play-state: running;
+}
+
+.paused {
+    animation-play-state: paused;
+}
+
+@media only screen and (max-width: 600px) {
+    main {
+        display: grid;
+        grid-template-areas: "game"
+            "info";
+    }
+
+    #screen {
+        width: 75vw;
+        height: 42vw;
+    }
+}

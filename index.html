@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@600&display=swap');
+    </style>
+
+    <title>Save the Turtles</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="screen">
+            <audio id="bgmusic" src="sound/bgmusic.mp3" loop></audio>
+            <audio id="goodsound" src="sound/goodsound.mp3"></audio>
+            <audio id="badsound" src="sound/badsound.mp3"></audio>
+            <audio id="clicksound" src="sound/click.mp3"></audio>
+            <div id="game" class="hidden">
+                <div id="game_background">
+                    <div id="background"></div>
+                    <div id="lil_palmtree"></div>
+                    <div id="cloud" class="cloudpos cloudmove"></div>
+                </div>
+                <div id="game_characters">
+                    <div id="jelly_container" class="pos1">
+                        <div id="jelly"></div>
+                    </div>
+                    <div id="jelly_container2" class="pos1a">
+                        <div id="jelly2"></div>
+                    </div>
+                    <div id="shrimp_container" class="pos2">
+                        <div id="shrimp"></div>
+                    </div>
+                    <div id="shrimp_container2" class="pos8">
+                        <div id="shrimp2"></div>
+                    </div>
+                    <div id="seaweed_container" class="pos3">
+                        <div id="seaweed"></div>
+                    </div>
+                    <div id="seaweed_container2" class="pos3a">
+                        <div id="seaweed2"></div>
+                    </div>
+                    <div id="trashbag_container" class="pos4">
+                        <div id="trashbag"></div>
+                    </div>
+                    <div id="netto_container" class="pos5">
+                        <div id="netto"></div>
+                    </div>
+                    <div id="facemask_container" class="pos6">
+                        <div id="facemask"></div>
+                    </div>
+                </div>
+
+                <div id="game_ui">
+                    <div id="trash"></div>
+                    <div id="points">0</div>
+                    <div id="time"></div>
+                    <div id="timer"></div>
+                    <div id="health">
+                        <div><span id="life1" class="turtlered"></span></div>
+                        <div><span id="life2" class="turtlered"></span></div>
+                        <div><span id="life3" class="turtlered"></span></div>
+                    </div>
+                    <div id="pause"></div>
+                </div>
+            </div>
+
+            <div id="pause_screen" class="hidden">
+                <div id="continue"></div>
+                <div id="on" class="hidden"></div>
+                <div id="off" class="hidden"></div>
+                <div id="pause_quit"></div>
+                <div id="pause_retry"></div>
+            </div>
+
+            <div id="titlescreen" class="hidden">
+                <div id="titlebackground"></div>
+                <div id="titlelogo"></div>
+                <div id="titlepalmtree"></div>
+                <div id="bigpalm"></div>
+                <div id="titlecloud" class="cloudpos cloudmove"></div>
+                <div id="start_button"></div>
+            </div>
+
+            <div id="story" class="hidden">
+                <div id="next"></div>
+                <div id="back"></div>
+            </div>
+
+            <div id="instructions" class="hidden">
+                <div id="play"></div>
+                <div id="back2"></div>
+            </div>
+
+            <div id="gameover" class="hidden">
+                <div id="gameover_retry"></div>
+                <div id="gameover_quit"></div>
+                <div id="game_over_text">
+                    <h1>Oh No!</h1>
+                    <p>You didn't pick up enough trash in time, so the hungry turtle ate the trash!</p>
+                    <p>Play again and remember to collect 15 pieces of trash</p>
+                </div>
+            </div>
+
+            <div id="gamelose" class="hidden">
+                <div id="gamelose_retry"></div>
+                <div id="gamelose_quit"></div>
+                <div id="game_lose_text">
+                    <h1>Oh No!</h1>
+                    <p>You picked up too many sea creatures, so the hungry turtle ate the trash!</p>
+                    <p>Play again and remember to collect 15 pieces of trash</p>
+                </div>
+            </div>
+
+            <div id="levelcomplete" class="hidden">
+                <div id="levelcomplete_replay"></div>
+                <div id="levelcomplete_quit"></div>
+                <div id="level_complete_text">
+                    <h1>Hooray!</h1>
+                    <p>You cleaned up all the trash and the hungry turtle was able to enjoy some seaweed!</p>
+                    <p>Play again to clean the ocean and make sure the hungry turtle only eats the good stuff!</p>
+                    <p></p>
+                </div>
+            </div>
+        </section>
+
+        <aside>
+            <img src="img/Title_1.svg" alt="title">
+            <p>Created by Carolyne Green</p>
+            <p>Probably the best game you will ever play in your entire life.</p>
+        </aside>
+    </main>
+
+    <footer>
+        <nav>
+            <ul>
+                <li>Facebook</li>
+                <li>Instagram</li>
+            </ul>
+        </nav>
+    </footer>
+
+    <script src="js/javascriptfile.js"></script>
+
+</body></html>

@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 880">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #ffcf92;
+      }
+
+      .cls-2 {
+        font-size: 112.74px;
+        font-family: Rockwell-Regular, Rockwell;
+      }
+
+      .cls-2, .cls-3 {
+        fill: #fff;
+      }
+
+      .cls-3 {
+        font-size: 153px;
+        font-family: Baloo-Regular, Baloo;
+      }
+
+      .cls-4 {
+        letter-spacing: 0em;
+      }
+    </style>
+  </defs>
+  <g id="Setting">
+    <rect class="cls-1" x="0.26" y="0.26" width="879.48" height="879.48"/>
+    <text class="cls-2" transform="translate(273.31 281.06)">Music</text>
+    <text class="cls-3" transform="translate(147.32 134.02)"><tspan class="cls-4">S</tspan><tspan x="84.61" y="0">ettings</tspan></text>
+  </g>
+</svg>
